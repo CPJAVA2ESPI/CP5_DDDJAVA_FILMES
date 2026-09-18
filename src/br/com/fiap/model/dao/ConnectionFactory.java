@@ -1,12 +1,12 @@
+//Giovana Carnevali -  RM566196
+//Henrique Vicente - RM564116
+//Yasmin Amorin - RM563645
+
 package br.com.fiap.model.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
-//Giovana Carnevali -  RM566196
-//Henrique Vicente - RM564116
-//Yasmin Amorin - RM563645
 
 public class ConnectionFactory {
 

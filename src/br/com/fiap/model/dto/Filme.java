@@ -1,8 +1,8 @@
-package br.com.fiap.model.dto;
-
 //Giovana Carnevali -  RM566196
 //Henrique Vicente - RM564116
 //Yasmin Amorin - RM563645
+
+package br.com.fiap.model.dto;
 
 public class Filme {
 

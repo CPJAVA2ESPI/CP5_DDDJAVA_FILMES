@@ -30,6 +30,8 @@ public class ConnectionFactory {
                     PASS
             );
 
+            System.out.println("Conexão aberta.");
+
         } catch (ClassNotFoundException e) {
 
             System.out.println(
@@ -59,6 +61,8 @@ public class ConnectionFactory {
         try {
 
             con.close();
+
+            System.out.println("Conexão fechada.");
 
         } catch (SQLException e) {
 

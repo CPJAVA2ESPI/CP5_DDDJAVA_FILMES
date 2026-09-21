@@ -4,11 +4,18 @@
 
 package br.com.fiap.model.dao;
 
-public interface IDAO {
+import java.util.ArrayList;
 
-    public String inserir(Object object);
+    public interface IDAO {
 
-    public String alterar(Object object);
+        public String inserir(Object object);
 
-    public String excluir(Object object);
-}
+        public String alterar(Object object);
+
+        public String excluir(Object object);
+
+        public ArrayList<Object> listarTodos();
+
+    }
+
+

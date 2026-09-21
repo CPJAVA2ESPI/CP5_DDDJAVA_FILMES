@@ -1,6 +1,7 @@
 //Giovana Carnevali -  RM566196
 //Henrique Vicente - RM564116
 //Yasmin Amorin - RM563645
+
 package br.com.fiap.controller;
 
 import br.com.fiap.model.dao.ConnectionFactory;
@@ -10,7 +11,6 @@ import br.com.fiap.model.dto.Filme;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
 
 
 public class FilmeController {
@@ -111,33 +111,36 @@ public class FilmeController {
         FilmeDAO filmeDAO =
                 new FilmeDAO(con);
 
-        ArrayList<Filme> listaFilme =
+        ArrayList<Object> listaFilme =
                 filmeDAO.listarTodos();
 
         for (int i = 0; i < listaFilme.size(); i++) {
 
+            Filme filme =
+                    (Filme) listaFilme.get(i);
+
             resultado =
                     resultado
                             + "Código: "
-                            + listaFilme.get(i).getCodigo()
+                            + filme.getCodigo()
                             + "\n";
 
             resultado =
                     resultado
                             + "Título: "
-                            + listaFilme.get(i).getTitulo()
+                            + filme.getTitulo()
                             + "\n";
 
             resultado =
                     resultado
                             + "Gênero: "
-                            + listaFilme.get(i).getGenero()
+                            + filme.getGenero()
                             + "\n";
 
             resultado =
                     resultado
                             + "Produtora: "
-                            + listaFilme.get(i).getProdutora()
+                            + filme.getProdutora()
                             + "\n";
 
             resultado =

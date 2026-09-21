@@ -1,6 +1,7 @@
 //Giovana Carnevali -  RM566196
 //Henrique Vicente - RM564116
 //Yasmin Amorin - RM563645
+
 package br.com.fiap.model.dao;
 
 import br.com.fiap.model.dto.Filme;
@@ -152,12 +153,12 @@ public class FilmeDAO implements IDAO {
         }
     }
 
-    public ArrayList<Filme> listarTodos() {
+    public ArrayList<Object> listarTodos() {
 
         String sql =
                 "select * from ddd_filme";
 
-        ArrayList<Filme> listaFilme =
+        ArrayList<Object> listaFilme =
                 new ArrayList<>();
 
         try (

@@ -1,6 +1,7 @@
 //Giovana Carnevali -  RM566196
 //Henrique Vicente - RM564116
 //Yasmin Amorin - RM563645
+//Murilo Macedo - RM563397
 
 package br.com.fiap.model.dto;
 

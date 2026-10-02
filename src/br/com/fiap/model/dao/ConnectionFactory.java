@@ -22,8 +22,8 @@ public class ConnectionFactory {
             String url =
                     "jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL";
 
-            final String USER = "rm566196";
-            final String PASS = "151206";
+            final String USER = "USER";
+            final String PASS = "PASSWORD";
 
             con = DriverManager.getConnection(
                     url,
